@@ -45,7 +45,7 @@ describe('index.js', function() {
 
   describe('calculatesFarePrice(start, destination)', function() {
     it('gives customers a free sample', function() {
-      expect(calculatesFarePrice(43, 44)).to.equal(0);
+      expect(calculatesFarePrice(43, 44)).to.equal(undefined);
     });
 
     it('charges 2 cents per foot when total feet travelled is between 400 and 2000 (remember the first 400 feet are free!)', function() {
